@@ -1,1 +1,59 @@
+﻿<html lang="en"><head>
+      <title>Google Search</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+body {font-family: arial,sans-serif;}
+div.nav {margin-top: 1ex;}
+div.nav A,span.nav {font-size: 10pt; font-family: arial,sans-serif;}
+div.nav A,span.big {font-size: 12pt; color: #0000cc;}
+div.nav A {font-size: 10pt; color: black;}
+A.l:link {color: #6f6f6f;}
+</style>
+<script type="text/javascript" src="db.js"></script>
+<script type="text/javascript" src="engine.js"></script>
+<script type="text/javascript" src="unicode.js"></script>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body bgcolor="#ffffff" text="#000000" link="#0000cc" vlink="#551A8B" alink="#ff0000">
 
+        <form method="GET" action="../search/"><table border="0" cellpadding="2" cellspacing="0"><tbody><tr><td rowspan="2">
+        <a href="../"><img border="0" src="../Title_Left.gif" width="200" height="78" alt="Google "></a></td><td nowrap="nowrap"><font face="arial,sans-serif" size="-1">
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://google.com/advanced_search">Advanced Search</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://google.com/preferencess">Preferences</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://google.com/intl/en_extra/help.html">Search&nbsp;Tips</a></font></td></tr><tr>
+        <td align="left" valign="middle">
+        <input type="text" name="q" size="31" maxlength="256" value="" id="searchbox">
+
+      <input type="submit" name="btnG" value="Google Search"> 
+      <input type="submit" name="btnI" value="I'm Feeling Lucky"><br></td></tr></tbody></table>
+      <a href="" style="color: rgb(0,0,153)" id="weburl">Web</a> <a href="img" style="color: rgb(0,0,153)" id="imgurl">Images</a><br>
+<table width="100%%" cellpadding="2" cellspacing="0" border="0"><tbody><tr><td bgcolor="#3366cc" align="left" nowrap="nowrap">
+<font face="arial,sans-serif" size="-1" color="white">Searched the web for <b> <a href="" id="searchtext" title="Look up on dictionary.com" style="color: white;"><font color="white">NULL</font></a></b>. &nbsp; </font></td><td id="restext" bgcolor="#3366cc" align="right" nowrap="nowrap">
+<font face="arial,sans-serif" size="-1" color="white">Results: <b>0</b>.
+Search took <b>0.486</b> seconds.</font></td></tr></tbody></table>
+    
+    <div id="main"></div>
+</center>
+
+<p></p><center><table width="100%" cellpadding="2" cellspacing="0" border="0"><tbody><tr><td width="100%" bgcolor="#3366cc">
+<font face="arial,sans-serif" color="white"><font size="-1"><center>
+<a href="http://directory.google.com/"><font color="white">Google&nbsp;Web&nbsp;Directory</font></a>
+
+- <a href="http://google.com/jobs.html"><font color="white">Cool&nbsp;Jobs</font></a>
+
+ - <a href="http://google.com/adv/intro.html"><font color="white">Advertise&nbsp;with&nbsp;Us!</font></a>
+ - <a href="http://google.com/intl/en_extra/searchcode.html"><font color="white">Add&nbsp;Google&nbsp;to&nbsp;your&nbsp;Site</font></a>
+ - <a href="../../../lang/"><font color="white">Google&nbsp;in&nbsp;your&nbsp;Language</font></a>
+ - <b><a href="http://google.com/about.html"><font color="white">All&nbsp;About&nbsp;Google</font></a>
+</b></center></font></font></td></tr></tbody></table><br>
+<font size="-1" color="#6f6f6f">&copy;2004 Google</font></center>
+  
+
+</form>
+<script>
+  var db = getdb();  
+  var result = getrestext();
+  addres(result);
+  findres(db, result);
+</script>
+</body></html>
